@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: none;
+}
+
+:root {
+  --background-color: #000;
+  --second-background-color: #524a4e;
+  --text-color: #fff;
+  --second-text-color: #a6adac;
+  --logo-color: #00ffff;
+}
+
+header {
+  display: flex;
+  height: 3.5rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3rem;
+  color: var(--second-text-color);
+  font-size: 1.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--logo-color);
+}
+
+.center {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li {
+  padding-right: 3rem;
+  transition: all 1s ease-in;
+}
+
+.nav li a {
+  color: var(--text-color);
+  transition: 0.5s ease-out;
+  padding-bottom: 2px;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: var(--logo-color);
+  font-size: 1.2rem;
+}
+
+.btn-touch {
+  color: var(--second-background-color);
+  padding: 0.5rem;
+  background: var(--second-text-color);
+  border-radius: 0.3rem;
+  transition: all 1s ease-in-out;
+}
+
+.btn-touch:hover {
+  background: var(--logo-color);
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  color: cyan;
+}
+
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+.homeLeft h3 {
+  font-size: 3rem;
+  color: var(--text-color);
+  animation: left 0.5s ease forwards;
+}
+
+.homeRight {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-image: url("./imgs/hero.png");
+  background-size: cover;
+  margin-left: 6rem;
+}
+
+.btns-class{
+  margin-top: 3rem;
+}
+
+.wa{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: 3rem;
+}
+
+.dw{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: var(--logo-color);
+}
+
+.dw:hover{
+ background: var(--second-text-color);
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 2rem; 
+}
+
+.card {
+  padding: 0.5rem;
+  background: linear-gradient(to right bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.05));
+  backdrop-filter: blur(5rem);
+}
+
+.card i{
+  font-size: 5rem;
+  color: var(--logo-color);
+}
+.card h1{
+  padding: 1rem;
+  color: var(--second-background-color);
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+
+.bar{
+  background: var(--second-background-color);
+  width: 25rem;
+  height: 0.4rem;
+  margin: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.html{
+  width: 95%;
+  height: 0.4rem;
+  background: var(--logo-color);
+  border-radius: 1rem;
+}
+
+.css{
+  width: 85%;
+  height: 0.4rem;
+  background: var(--logo-color);
+  border-radius: 1rem;
+}
+.js{
+  width: 70%;
+  height: 0.4rem;
+  background: var(--logo-color);
+  border-radius: 1rem;
+}
+.py{
+  width: 65%;
+  height: 0.4rem;
+  background: var(--logo-color);
+  border-radius: 1rem;
+}
+
+.per{
+  position: absolute;
+  right: 1.5rem;
+  bottom: 3rem;
+}
+
+.portfolio{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.pro{
+  border-radius: 1rem;
+}
+
+.img1{
+  width: 20rem;
+  height: 10rem;
+  background-image: url('./imgs/img1.png');
+  background-size: cover;
+}
+.img2{
+  width: 15rem;
+  height: 11rem;
+  background-image: url('./imgs/img2.png');
+  background-size: cover;
+}
+.img3{
+  width: 20rem;
+  height: 10rem;
+  background-image: url('./imgs/img3.png');
+  background-size: cover;
+}
+
+.links{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links i{
+  font-size: 2.5rem;
+}
