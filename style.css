@@ -261,6 +261,16 @@ section {
   padding: 2rem 7rem;
 }
 
+.contact-up{
+  margin-bottom: 2rem;
+}
+.contact-down{
+  margin-top: 2rem;
+}
+.contact-down a{
+  color: var(--second-background-color);
+  font-size: 3rem;
+}
 input {
   width: 15rem;
   height: 1.75rem;
@@ -275,4 +285,9 @@ input {
 
 input::placeholder {
   text-align: center;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
 }
